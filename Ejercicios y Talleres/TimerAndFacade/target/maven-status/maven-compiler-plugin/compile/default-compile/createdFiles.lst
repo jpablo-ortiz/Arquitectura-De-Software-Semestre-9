@@ -1,0 +1,4 @@
+com\mycompany\timerandfacade\JAXRSConfiguration.class
+timers\NewTimerSessionBean.class
+com\mycompany\timerandfacade\resources\JavaEE8Resource.class
+facades\FacadeTimer.class
