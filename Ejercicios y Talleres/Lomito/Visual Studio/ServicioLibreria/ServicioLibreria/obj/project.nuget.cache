@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "gLc6DpLW1SBJJjISW7qUoMjD38Vh/D7Qk2CSNMkp9cD/GFKJvqOgHpKoiKJfyHpqkhNhbRQobUVo7yEcVnX3tA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Estudiante\\Documents\\Arquitectura-De-Software-Semestre-9\\Ejercicios y Talleres\\Lomito\\Visual Studio\\ServicioLibreria\\ServicioLibreria\\ServicioLibreria.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Estudiante\\.nuget\\packages\\ado.net.client.annotations\\1.2.0\\ado.net.client.annotations.1.2.0.nupkg.sha512",
+    "C:\\Users\\Estudiante\\.nuget\\packages\\ado.net.client.core\\1.4.4\\ado.net.client.core.1.4.4.nupkg.sha512",
+    "C:\\Users\\Estudiante\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Estudiante\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Estudiante\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Estudiante\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Estudiante\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Estudiante\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
