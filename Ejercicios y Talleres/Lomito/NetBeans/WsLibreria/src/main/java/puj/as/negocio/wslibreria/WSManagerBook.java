@@ -25,6 +25,7 @@ import javax.ws.rs.core.UriInfo;
 import puj.as.libreriadomain.entities.Book;
 import puj.as.negocio.wslibreria.facades.BookFacade;
 
+
 /**
  * REST Web Service
  *
@@ -56,30 +57,38 @@ public class WSManagerBook {
     @GET
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response findById(@PathParam("id") String id) {
-        Book book = bookFacade.find(id);
-        if (book != null) {
-            return Response.ok(book).build();
+    public Response findBybookId(@PathParam("id") String id) {
+        //Book book = bookFacade.find(id);
+        List<Book> books = bookFacade.findAll();
+        for (Book book : books) {
+            if(book.getBookId().equals(id))
+            {
+                return Response.ok(book).build();
+            }
         }
         return Response.status(Response.Status.NOT_FOUND).build();
     }
 
     /**
-     * PUT method for updating or creating an instance of WSManagerBook
+     * POST method for updating or creating an instance of WSManagerBook
      * 
+     * @param book
      * @param content representation for the resource
+     * @return 
      */
-    @PUT
+    @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public Response addBook(Book book) {
         bookFacade.create(book);
-        URI createdURI = context.getBaseUriBuilder()
-                .path(book.getBookId())
+        //URI createdURI = context.getBaseUriBuilder()
+        //        .path(book.getBookId())
+        //        .build();
+        return Response
+                .ok(book.getBookId())
                 .build();
-        return Response.created(createdURI).build();
     }
 
-    @POST
+    @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     public Response changeBook(Book book) {
         bookFacade.edit(book);
